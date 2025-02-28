@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Topic</title>
+</head>
+<body>
+    <ul style="background-color: aliceblue;"><h1>Basic Css</h1>
+        <h3><li>Add Css To Files</h3>
+            <ul>
+                <li>Inline Css
+                    <ul>
+                        &lt;p style="color: red"&gt;Inline style&lt;/p&gt
+                    </ul>
+                </li>
+                <li>Internal Css
+                    <ul>
+                        &lt;head&gt;<br />&lt;style&gt;<br />p {color: "red"}<br />&lt;/style&gt;<br />&lt;/head&gt
+                    </ul>
+                </li>
+                <li>External Css
+                    <ul>
+                        &lt;head&gt;<br />&lt;link rel="stylesheet" href="./styles.css"&gt;<br />&lt;/head&gt;
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <h3><li>Css Selectors</h3>
+            <ul>
+                <li>Element Selectors
+                    <ul>
+                        h1 {color: red;}
+                    </ul>
+                </li>
+                <li>Class Selectors
+                    <ul>
+                        .main(Start with dot then name of the class)
+                    </ul>
+                </li>
+                <li>Id Selectors
+                    <ul>
+                        #main(Start with Ash sign then the id name follow)
+                    </ul>
+                </li>
+                <li>Attribute Selectors
+                    <ul>
+                        p[draggable="true"](versatile in distinguishing element)
+                    </ul>
+                </li>
+                <li>Universal Selectors
+                    <ul>* {color: blue} This will be applicable to whole content</ul>
+                </li>
+                <li>Pseudo class selector
+                    <ul>
+                        a:hover(Applicable when hovering)
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><h3>Css Colors</h3>
+            <ul>
+                <li>"Named-color" on <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/named-color">named-color</a>
+                    <ul>
+                        <li>Hex code(#FFFFFF) or the name(white)</li>
+                    </ul>
+                </li>
+                <li>ColorHunt
+                    <ul>
+                        <li><a href="https://colorhunt.co/">ColorHunt</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><h3>Font Size Properties</h3>
+            <ul>
+                <li>px(pixel)
+                    <ul>
+                        <li>1/96 of an inch</li>
+                    </ul>
+                </li>
+                <li>pt(point)
+                    <ul>
+                        <li>1/72 of an inch</li>
+                    </ul>
+                </li>
+                <li>em
+                    <ul>
+                        <li>share same size with a parent
+                            <ul>
+                                <li>&lt;footer&gt;<br />&lt; id="em" p&gt;demo&lt/p&gt;<br>&lt;/footer&gt;
+                                    <ul>
+                                        <li>footer {font-size: 20px} p {font-size: 2em} => 2 * 20px= 40px</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>rem
+                    <ul>
+                        <li>Share same font size with root element(html)
+                            <ul>
+                                <li>&lt;html&gt;<br />&lt;footer&gt;<br />&lt; id="rem" p&gt;demo&lt/p&gt;<br>&lt;/footer&gt<br />&lt;/html&gt;
+                                    <ul>
+                                        <li>html {font-size: 10pt} #rem {font-size: 3rem} => 3*10pt = 30pt</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><h3>Font Family Properties</h3>
+            <ul>
+                <li>Using <a href="https://fonts.google.com/"> google fonts</a>
+                    <ul>
+                        <li>Embedded the link in the head section.</li>
+                    </ul>
+                </li>
+                <li>Manually added
+                    <ul>
+                        <li>Locally added without any external links.</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><h3>Font Weight Properties</h3>
+            <ul>
+                <li>Can be of number(100-900)
+                    <ul>
+                        <li>100 denotes light</li>
+                        <li>900 denotes bold</li>
+                    </ul>
+                </li>
+                <li>Can be of keywords(normal, bold, light, bolder, lighter e.t.c)
+                    <ul>
+                        <li>lighter and bolder[They are relative to parent(lighter => -100, bolder => +100)]</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><h3>Text Align</h3>
+            <ul>
+                <li>h1 {text-align: left}(right, center e.t.c)</li>
+            </ul>
+        </li>
+        <li><h3>Css Inspection</h3>
+            <ul>
+                <li>Chrome Dev Tools
+                    <ul>
+                        <li>Inspection
+                            <ul>
+                                <li>Arrow icon
+                                    <ul>
+                                        <li>Precision selection</li>
+                                    </ul>
+                                </li>
+                                <li>Styles
+                                    <ul>
+                                        <li>Pops up all css styles</li>
+                                    </ul>
+                                </li>
+                                <li>Computed
+                                    <ul>
+                                        <li>Pops up summary of all css styles</li>
+                                    </ul>
+                                </li>
+                                <li>Vertical dot
+                                    <ul>
+                                        <li>Pops up more tools => css overview
+                                            <ul>
+                                                <li>General Overview of all css styles</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><h3>Css Box Model</h3>
+            <ul>
+                <p>
+                    Note: Every html element should be treated as a box on screen.<br />
+                    setting elements height and width makes it obvious.<br /> 
+                    We can also manually contain element in box 
+                    using Div(Content Division Element)
+                </p>
+                <li>Margin
+                    <ul>
+                        <li>This is applicable to outside the border.<br />
+                            It separates the element from other elements on the page,<br />
+                             controlling the distance between neighboring boxes
+                        </li>
+                    </ul>
+                </li>
+                <li>Border
+                    <ul>
+                        <li>This is applicable to thickness of element.<br />
+                            Border is the line that wraps around the padding and content.<br />
+                            It visually separates the element from its surroundings.
+                        </li>
+                    </ul>
+                </li>
+                <li>Padding
+                    <ul>
+                        <li>This is the space between an element's content and its border.<br />
+                            It creates internal spacing, pushing the border away from the content
+                        </li>
+                    </ul>
+                </li>
+                <ul><h4>Applications</h4>
+                    <li><p>#sample {border: 10px solid black}</p>
+                        <ul>
+                            <li>This is means 10px to all 4 sides and <br /> 
+                                make it solid and of black color</li>
+                        </ul>
+                    </li>
+                    <li>#sample2 {border: solid black}
+                        <ul>
+                            <li>Make border of black and solid for visual</li>
+                        </ul>
+                    </li>
+                    <li>#sample3 {border-width: 10px 2px 4px 6px}
+                        <ul>
+                            <li>Apply 10px to top, 2px to right,<br /> 
+                                4px to bottom and 6px to left</li>
+                        </ul>
+                    </li>
+                    <li>#sample4 {border-width: 12px 8px}
+                        <ul>
+                            <li>Apply 12px to both top and bottom and <br /> 
+                                8px to both right and left</li>
+                        </ul>
+                    </li>
+                </ul>
+            </ul>
+        </li>
+    </ul>
+    <hr>
+    
+</body>
+</html>
